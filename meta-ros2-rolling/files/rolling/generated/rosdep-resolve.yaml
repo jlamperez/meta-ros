@@ -11,8 +11,6 @@ benchmark:
 - google-benchmark@meta-ros2
 binutils:
 - binutils@openembedded-core
-bison:
-- bison@openembedded-core
 boost:
 - boost@openembedded-core
 bullet:
@@ -167,6 +165,8 @@ libopencv-dev:
 - opencv@meta-oe
 libopenni-dev:
 - ${ROS_UNRESOLVED_DEP-libopenni-dev}
+liborocos-kdl-dev:
+- orocos-kdl@meta-ros1-noetic
 libpcap:
 - libpcap@openembedded-core
 libpcl-all:
@@ -215,6 +215,8 @@ libtheora:
 - libtheora@openembedded-core
 libudev-dev:
 - udev@openembedded-core
+liburdfdom-tools:
+- urdfdom@meta-ros1
 libusb-1.0:
 - libusb1@openembedded-core
 libusb-1.0-dev:
@@ -251,6 +253,10 @@ moveit_core:
 - ${ROS_UNRESOLVED_DEP-moveit-core}
 moveit_ros_planning:
 - ${ROS_UNRESOLVED_DEP-moveit-ros-planning}
+ocl-icd-opencl-dev:
+- ${ROS_UNRESOLVED_DEP-ocl-icd-opencl-dev}
+opencl-headers:
+- opencl-headers@meta-oe
 opende:
 - ${ROS_UNRESOLVED_DEP-opende}
 opengl:
@@ -297,6 +303,8 @@ python3-dev:
 - python3@openembedded-core
 python3-empy:
 - python3-empy@meta-ros-common
+python3-fiona:
+- ${ROS_UNRESOLVED_DEP-python3-fiona}
 python3-flake8:
 - python3-flake8@meta-ros-common
 python3-flask:
@@ -335,6 +343,8 @@ python3-pandas:
 - python3-pandas@meta-python
 python3-pil:
 - python3-pillow@meta-python
+python3-pip:
+- python3-pip@openembedded-core
 python3-pkg-resources:
 - python3-setuptools@openembedded-core
 python3-psutil:
@@ -345,12 +355,16 @@ python3-pydot:
 - python3-pydot@meta-ros-common
 python3-pygraphviz:
 - python3-pygraphviz@meta-ros-common
+python3-pykdl:
+- python3-pykdl@meta-ros1-noetic
 python3-pyproj:
 - python3-pyproj@meta-ros-common
 python3-pytest:
 - python3-pytest@meta-python
 python3-pytest-mock:
 - python3-pytest-mock@meta-ros-common
+python3-pytest-timeout:
+- ${ROS_UNRESOLVED_DEP-python3-pytest-timeout}
 python3-qt5-bindings:
 - python3-pyqt5@meta-qt5
 python3-requests:
@@ -361,6 +375,8 @@ python3-rospkg:
 - python3-rospkg@meta-ros-common
 python3-rospkg-modules:
 - python3-rospkg@meta-ros-common
+python3-rtree:
+- ${ROS_UNRESOLVED_DEP-python3-rtree}
 python3-serial:
 - python3-pyserial@meta-python
 python3-setuptools:
