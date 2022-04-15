@@ -1,4 +1,4 @@
-# Copyright (c) 2021 LG Electronics, Inc.
+# Copyright (c) 2022 Víctor Mayoral-Vilches
 
 # libatomic is just one of the packages provided by gcc-runtime recipe
 # but gcc-runtime recipe doesn't have libatomic in PROVIDES, so we cannot map
@@ -12,3 +12,5 @@ ROS_EXEC_DEPENDS:remove = "gcc-runtime"
 ROS_EXEC_DEPENDS:append-class-target = " libatomic"
 # and also remove it from build time depends when buiding native rc-utils
 DEPENDS:remove:class-native = "gcc-runtime-native gcc-runtime"
+
+BBCLASSEXTEND =+ "native"
